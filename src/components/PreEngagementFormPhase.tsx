@@ -51,16 +51,16 @@ export const PreEngagementFormPhase = () => {
             <NotificationBar />
             <Box as="form" data-test="pre-engagement-chat-form" onSubmit={handleSubmit} {...formStyles}>
                 <Text {...titleStyles} as="h3">
-                    Hi there!
+                    ¡Hola!
                 </Text>
                 <Text {...introStyles} as="p">
-                    We&#39;re here to help. Please give us some info to get started.
+                Estamos aqui para ayudar, favor de ingresar tus datos para comenzar.
                 </Text>
                 <Box {...fieldStyles}>
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Nombre</Label>
                     <Input
                         type="text"
-                        placeholder="Please enter your name"
+                        placeholder="Ingresar su nombre"
                         name="name"
                         data-test="pre-engagement-chat-form-name-input"
                         value={name}
@@ -69,10 +69,10 @@ export const PreEngagementFormPhase = () => {
                     />
                 </Box>
                 <Box {...fieldStyles}>
-                    <Label htmlFor="email">Email address</Label>
+                    <Label htmlFor="email">Correo electronico</Label>
                     <Input
                         type="email"
-                        placeholder="Please enter your email address"
+                        placeholder="example@gmail.com"
                         name="email"
                         data-test="pre-engagement-chat-form-email-input"
                         value={email}
@@ -82,9 +82,9 @@ export const PreEngagementFormPhase = () => {
                 </Box>
 
                 <Box {...fieldStyles}>
-                    <Label htmlFor="query">How can we help you?</Label>
+                    <Label htmlFor="query">Como podemos ayudarte?</Label>
                     <TextArea
-                        placeholder="Ask a question"
+                        placeholder="Ingresa tu pregunta y te atenderemos"
                         name="query"
                         data-test="pre-engagement-chat-form-query-textarea"
                         value={query}
@@ -95,7 +95,7 @@ export const PreEngagementFormPhase = () => {
                 </Box>
 
                 <Button variant="primary" type="submit" data-test="pre-engagement-start-chat-button">
-                    Start chat
+                    Empezar conversacion
                 </Button>
             </Box>
         </>

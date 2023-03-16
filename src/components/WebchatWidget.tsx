@@ -28,11 +28,20 @@ export function WebchatWidget() {
             dispatch(changeEngagementPhase({ phase: EngagementPhase.PreEngagementForm }));
         }
     }, [dispatch]);
-
+    const color = 'rgb(167, 77, 249)'
     return (
         <AnyCustomizationProvider
             baseTheme={theme?.isLight ? "default" : "dark"}
-            theme={theme?.overrides}
+            theme={{
+                "backgroundColors":{
+                    "colorBackgroundPrimary" : 'rgb(167, 77, 249)',
+                    "colorBackgroundPrimaryStrong" : color,
+                    "colorBackgroundPrimaryStronger" : color,
+                },
+                "textColors":{
+                    "colorTextLink" : color
+                }
+              }}
             elements={{
                 MESSAGE_INPUT: {
                     boxShadow: "none!important" as "none"

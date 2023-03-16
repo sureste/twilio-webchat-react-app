@@ -36,7 +36,7 @@ export const ConversationEnded = () => {
     return (
         <Box {...containerStyles}>
             <Text as="h3" {...titleStyles}>
-                Thanks for chatting with us!
+            Gracias por ponerte en contacto!
             </Text>
             {TranscriptComponent ? (
                 <TranscriptComponent
@@ -49,10 +49,10 @@ export const ConversationEnded = () => {
                 <Fragment />
             )}
             <Text as="p" {...textStyles}>
-                If you have any more questions, feel free to reach out again.
+            Si tienes mas preguntas , no dudes en iniciar nuevamente un chat , un agente te atendera.
             </Text>
             <Button variant="primary" data-test="start-new-chat-button" onClick={handleStartNewChat}>
-                Start new chat
+            Empezar nueva conversacion
             </Button>
         </Box>
     );

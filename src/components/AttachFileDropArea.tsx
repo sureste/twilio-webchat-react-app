@@ -77,7 +77,7 @@ export const AttachFileDropArea = ({ children }: { children: React.ReactNode }) 
                         <AttachIcon decorative={true} size="sizeIcon60" />
                     </Box>
                     <Text as="p" {...attachTitleStyles}>
-                        Drop a file or image here
+                    Arrastra un documento o imagen aquí
                     </Text>
                 </Box>
             )}
